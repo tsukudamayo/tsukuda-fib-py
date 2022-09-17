@@ -1,6 +1,8 @@
 from setuptools import find_packages, setup
 
 
+with open("READM.md", "r") as fh:
+    long_description = fh.read()    
 setup(
     name="tsukuda_fib_py",
     version="0.0.1",
@@ -20,4 +22,7 @@ setup(
     python_requires=">=3",
     test_requires=["pytest"],
 )
+
+
+    
 
