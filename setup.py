@@ -19,13 +19,13 @@ setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3",
-    test_requires=["pytest"],
     entry_points={
         "console_scripts": [
             "fib-number = tsukuda_fib_py.cmd.fib_numb:fib_numb",
         ],
     },
+    python_requires=">=3",
+    test_requires=["pytest"],
 )
 
 
