@@ -27,7 +27,3 @@ setup(
     python_requires=">=3",
     test_requires=["pytest"],
 )
-
-
-    
-
