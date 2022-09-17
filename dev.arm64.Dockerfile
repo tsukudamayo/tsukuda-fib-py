@@ -43,6 +43,7 @@ RUN apt update && apt install -y zlib1g-dev \
     && apt install -y nodejs \
     && pip3 install python-lsp-server pyright \
     && ln -sf /usr/local/bin/python3 /usr/local/bin/python \
+    && ln -sf /usr/local/bin/pip3 /usr/local/bin/pip \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /workspace
