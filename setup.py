@@ -21,6 +21,11 @@ setup(
     ],
     python_requires=">=3",
     test_requires=["pytest"],
+    entry_points={
+        "console_scripts": [
+            "fib-number = tsukuda_fib_py.cmd.fib_numb:fib_numb",
+        ],
+    },
 )
 
 
