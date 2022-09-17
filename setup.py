@@ -9,7 +9,7 @@ setup(
     author="tsukudamayo",
     author_email="tsukudamayo@gmail.com",
     description="Calculates a FIbonacci number",
-    long_description="A basic library that calculates Fibonacci numbers",
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/tsukudamayo/tsukuda-fib-py",
     install_requires=[],
@@ -20,8 +20,8 @@ setup(
         "Operating System :: OS Independent",
     ],
     entry_points={
-        'console_scripts': [
-            'fib-number = tsukuda_fib_py.cmd.fib_numb:fib_numb',
+        "console_scripts": [
+            "fib-number = tsukuda_fib_py.cmd.fib_numb:fib_numb",
         ],
     },
     python_requires=">=3",
