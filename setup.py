@@ -20,8 +20,8 @@ setup(
         "Operating System :: OS Independent",
     ],
     entry_points={
-        "console_scripts": [
-            "fib-number = tsukuda_fib_py.cmd.fib_numb:fib_numb",
+        'console_scripts': [
+            'fib-number = tsukuda_fib_py.cmd.fib_numb:fib_numb',
         ],
     },
     python_requires=">=3",
