@@ -14,7 +14,7 @@ on:
               python -m pip install --upgrade pip
               pip install -r requirements.txt
           - name: update version
-              run: python get_latest_version.py
+            run: python get_latest_version.py
           - name: install deployment dependencies
             if: github.event.pull_request.merged == true
             run: |
