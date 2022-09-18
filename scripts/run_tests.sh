@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# trigger build (14-6-2021)
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 echo $SCRIPTPATH
 cd $SCRIPTPATH
