@@ -37,7 +37,7 @@ def pack_version_number(version_buffer: Union[Tuple[int, int, int], List[str]]) 
 
 
 def write_version_to_file(version_number: str) -> None:
-    version_file_path: str = str(pathlib.Path(__file__).parent.absolute()) + "tsukuda_fib_py/version.py"
+    version_file_path: str = str(pathlib.Path(__file__).parent.absolute()) + "/tsukuda_fib_py/version.py"
     if os.path.exists(version_file_path):
         os.remove(version_file_path)
     with open(version_file_path, "w") as f:
