@@ -20,7 +20,8 @@ else
     docker run -it --rm \
         -v /tmp/.X11-unix:/tmp/.X11-unix \
         -e DISPLAY=$DISPLAY \
-        --name speed-up-your-python-with-rust \ rust-python311-dev \
+        --name speed-up-your-python-with-rust \
+        rust-python311-dev \
         /bin/bash
     xhost -local:
 fi
