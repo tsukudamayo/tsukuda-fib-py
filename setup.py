@@ -1,6 +1,6 @@
 from setuptools import dist
 dist.Distribution().fetch_build_eggs(["setuptools_rust"])
-from setuptools import setup
+from setuptools import setup, find_packages
 from setuptools_rust import Binding, RustExtension
 import pathlib
 
@@ -62,6 +62,6 @@ setup(
         "Programming Language :: Rust",
         "Operating System :: POSIX",
         "Operating System :: MacOS :: MacOS X",
-    ]
+    ],
     zip_safe=False,
 )
