@@ -1,11 +1,16 @@
 from setuptools import find_packages, setup
+import pathlib
 
 
 with open("README.md", "r") as fh:
-    long_description = fh.read()    
+    long_description = fh.read()
+
+with open(str(pathlib.Path(__file__).parent.absolute()) + "/tsukuda_fib_py/version.py", "r") as fh:
+    version = fh.read().split("=")[1].replace("'", "")
+
 setup(
     name="tsukuda_fib_py",
-    version="0.0.0",
+    version=version,
     author="tsukudamayo",
     author_email="tsukudamayo@gmail.com",
     description="Calculates a FIbonacci number",
